@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+#header {
+	min-width: 1360px;
+}
+#header .top {
+	border-bottom: 1px solid #999;
+}
+#header .top .top_inner {
+	margin: 0 auto;
+	width: 1360px;
+	height: 55px;
+}
+#header .top .top_inner .utils {
+	float: right;
+}
+#header .top .top_inner .utils .sign_in {
+	float: left;
+}
+#header .top .top_inner .utils .sign_in a {
+	display: block;
+	padding: 0 11px;
+	margin-top: 20px;
+	color: #999;
+}
+#header .top .top_inner .utils .search {
+	float: left;
+	width: 70px;
+	height: 55px;
+	border-left: 1px solid #ccc;
+	text-align: right;
+}
+#header .top .top_inner .utils .search a {
+	display: block;
+	padding: 12px 0;
+}
+#header .menu {
+	margin: 0 auto;
+	width: 1360px;
+	height: 80px;
+}
+#header .menu .logo {
+	float: left;
+	margin-top: 20px;
+}
+#gnb {
+	float: right;
+}
+#gnb li {
+	float: left;
+	margin-top: 30px;
+	padding: 0 13px;
+}
+#gnb li a {
+	display: block;
+	padding: 0 20px;
+	line-height: 30px;
+	font-size: 15px;
+	color: #999;
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+	<header id="header">
+		<div class="top"> <!-- border-bottom -->
+			<div class="top_inner">
+				<div class="utils">
+					<div class="sign_in"><a href="">Sign In</a></div>
+					<div class="search"><a href=""><img src="images/btn_search.png" alt="search"></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="logo">
+				<h1>
+					<a href="">
+						<img src="images/logo.png" alt="logo">
+					</a>
+				</h1>
+			</div>
+			<nav id="gnb">
+				<ul>
+					<li><a href="">ABOUT</a></li>
+					<li><a href="">DOWNLOADS</a></li>
+					<li><a href="">DOCUMENTATION</a></li>
+					<li><a href="">COMMUNITY</a></li>
+					<li><a href="">FORUM</a></li>
+					<li><a href="">NEWS</a></li>
+					<li><a href="">BLOG</a></li>
+					<li><a href="">CONTACT</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</div>
+</body>
+</html>

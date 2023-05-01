@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>basic :: Layout Test</title>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap">
+<style>
+body, ul, ol, p, h1, h2, h3, h4, h5, h6, dl, dt, dd, table, th, td {
+	margin: 0;
+	padding: 0;
+}
+body {
+	line-height: 1;
+	font-family: "Open Sans", "Noto Sans KR", sans-serif;
+	font-size: 1em;
+	color: #000;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+img {
+	vertical-align: top;
+}
+
+/* header */
+#header {
+	margin: 0 auto;
+	width: 1500px;
+	height: 100px;
+}
+#header .logo {
+	float: left;
+	margin-top: 28px;
+}
+#gnb {
+	float: left;
+	margin-left: 120px;
+}
+#gnb li {
+	display: inline-block;
+}
+#gnb li a {
+	display: block;
+	padding: 0 35px;
+	line-height: 100px;
+	font-size: 20px;
+}
+#header .utils {
+	float: right;
+	margin-top: 32px;
+}
+#header .utils li {
+	display: inline-block;
+	margin-left: 14px;
+}
+#header .utils li a {
+	display: block;
+	padding: 5px;
+}
+#header .utils li a img {
+	margin-right: 3px;
+	vertical-align: middle;
+}
+#header .utils li a span {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+<header id="header">
+	<div class="logo"><h1 id="logo"><img src="images/header_logo.png" alt="header logo"></h1></div>
+	<nav id="gnb">
+		<ul>
+			<li><a href="">문화체험</a></li>
+			<li><a href="">문화공감</a></li>
+			<li><a href="">문화지식</a></li>
+			<li><a href="">문화알리미</a></li>
+		</ul>
+	</nav>
+	<div class="utils">
+		<ul>
+			<li>
+				<a href="">
+					<img src="images/ico_header_login.png" alt="login icon">
+					<span>로그인</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_header_join.png" alt="join icon">
+					<span>회원 가입</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_header_guide.png" alt="guide icon">
+					<span>이용안내</span>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/ico_header_adjust.png" alt="adjust icon">
+					<span>100%</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</header>
+</body>
+</html>
